@@ -5,8 +5,8 @@
         
         <div class="panel panel-default panel-table">
           <div class="panel-heading">
-            <a href="add_faqs.php" style="float:right">Add Faq Page</a>
-            <h3 class="m-t-0 m-b-5">Faq Page</h3>            
+            <a href="add_faqs.php" style="float:right">Add Faq</a>
+            <h3 class="m-t-0 m-b-5">Faq</h3>            
           </div>
           <div class="panel-body">
             <div class="table-responsive">
@@ -40,7 +40,7 @@
                                 <i class="zmdi zmdi-close"></i>
                               </span>
                             </button>
-                            <center><h4 class="modal-title">Faq Page Information</h4></center>
+                            <center><h4 class="modal-title">Faq Information</h4></center>
                           </div>
                           <div class="modal-body" id="modal_body">
                             <div class="row">

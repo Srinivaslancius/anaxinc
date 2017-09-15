@@ -67,7 +67,7 @@
                 <span class="menu-icon">
                    <i class="zmdi zmdi-collection-item  zmdi-hc-fw"></i>
                 </span> 
-                <span class="menu-text">Faq Page</span>
+                <span class="menu-text">Faq</span>
               </a>
             </li>
             <!-- <li  class="<?php if($page_name == 'products.php' || $page_name == 'add_products.php' || $page_name == 'edit_products.php') { echo "active"; } ?>">
