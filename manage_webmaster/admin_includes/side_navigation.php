@@ -46,12 +46,12 @@
                 <span class="menu-text">Banners</span>
               </a>
             </li>  
-            <li  class="<?php if($page_name == 'logos.php' || $page_name == 'add_logos.php' || $page_name == 'edit_logos.php' ) { echo "active"; } ?>">
-              <a href="logos.php" aria-haspopup="true">
+            <li  class="<?php if($page_name == 'company_logos.php' || $page_name == 'add_company_logos.php' || $page_name == 'edit_company_logos.php' ) { echo "active"; } ?>">
+              <a href="company_logos.php" aria-haspopup="true">
                 <span class="menu-icon">
                    <i class="zmdi zmdi-collection-image zmdi-hc-fw"></i>
                 </span> 
-                <span class="menu-text">Logos</span>
+                <span class="menu-text">Company Logos</span>
               </a>
             </li>  
             <li  class="<?php if($page_name == 'content_pages.php' || $page_name == 'add_content_pages.php' || $page_name == 'edit_content_pages.php') { echo "active"; } ?>">
@@ -62,7 +62,7 @@
                 <span class="menu-text">Content Pages</span>
               </a>
             </li>
-            <li  class="<?php if($page_name == 'products.php' || $page_name == 'add_products.php' || $page_name == 'edit_products.php') { echo "active"; } ?>">
+            <!-- <li  class="<?php if($page_name == 'products.php' || $page_name == 'add_products.php' || $page_name == 'edit_products.php') { echo "active"; } ?>">
               <a href="products.php" aria-haspopup="true">
                 <span class="menu-icon">
                    <i class="zmdi zmdi-book-image zmdi-hc-fw"></i>
@@ -85,7 +85,7 @@
                 </span> 
                 <span class="menu-text">Mobile Push Notifications</span>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

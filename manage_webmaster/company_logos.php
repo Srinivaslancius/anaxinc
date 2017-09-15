@@ -5,8 +5,8 @@
         
         <div class="panel panel-default panel-table">
           <div class="panel-heading">
-            <a href="add_logos.php" style="float:right">Add Logos</a>
-            <h3 class="m-t-0 m-b-5">Logos</h3>            
+            <a href="add_company_logos.php" style="float:right">Add Company Logos</a>
+            <h3 class="m-t-0 m-b-5">Company Logos</h3>            
           </div>
           <div class="panel-body">
             <div class="table-responsive">
@@ -27,9 +27,9 @@
                     <td><?php echo $row['title'];?></td>
                     <td><img src="<?php echo $base_url . 'uploads/logo_images/'.$row['banner'] ?>" height="100" width="100"/></td> 
 
-                    <td><?php if ($row['status']==0) { echo "<span class='label label-outline-success check_active open_cursor' data-incId=".$row['id']." data-status=".$row['status']." data-tbname='company_logos'>Active</span>" ;} else { echo "<span class='label label-outline-info check_active open_cursor' data-status=".$row['status']." data-incId=".$row['id']." data-tbname='banners'>In Active</span>" ;} ?></td>
+                    <td><?php if ($row['status']==0) { echo "<span class='label label-outline-success check_active open_cursor' data-incId=".$row['id']." data-status=".$row['status']." data-tbname='company_logos'>Active</span>" ;} else { echo "<span class='label label-outline-info check_active open_cursor' data-status=".$row['status']." data-incId=".$row['id']." data-tbname='company_logos'>In Active</span>" ;} ?></td>
 
-                    <td> <a href="edit_logos.php?bid=<?php echo $row['id']; ?>"> <i class="zmdi zmdi-edit"></i> &nbsp; </a> <a href="delete_logos.php?bid=<?php echo $row['id']; ?>"><i class="zmdi zmdi-delete zmdi-hc-fw" onclick="return confirm('Are you sure you want to delete?')"></i></a></td> 
+                    <td> <a href="edit_company_logos.php?bid=<?php echo $row['id']; ?>"> <i class="zmdi zmdi-edit"></i> &nbsp; </a> <a href="delete_company_logos.php?bid=<?php echo $row['id']; ?>"><i class="zmdi zmdi-delete zmdi-hc-fw" onclick="return confirm('Are you sure you want to delete?')"></i></a></td> 
                   </tr>
                   <?php  $i++; } ?>                  
                 </tbody>                

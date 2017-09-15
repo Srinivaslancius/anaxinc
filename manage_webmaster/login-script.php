@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$pwd=$_POST["admin_password"];	
 	$admin_password = encryptPassword($pwd);	
 	//$decrypted=decryptPassword($admin_password);
-	$sql = "SELECT * FROM admin_users WHERE admin_email = '$admin_email' AND admin_password = '$admin_password' AND flag=0";
+	$sql = "SELECT * FROM admin_users WHERE admin_email = '$admin_email' AND admin_password = '$admin_password' AND flag=0 AND status='0' ";
 	$result = $conn->query($sql);
 	$row = $result->fetch_assoc();
 

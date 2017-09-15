@@ -18,9 +18,9 @@
                 if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                     $sql = "INSERT INTO company_logos (`title`, `banner`, `status`) VALUES ('$title', '$fileToUpload','$status')";
                     if($conn->query($sql) === TRUE){
-                       echo "<script type='text/javascript'>window.location='logos.php?msg=success'</script>";
+                       echo "<script type='text/javascript'>window.location='company_logos.php?msg=success'</script>";
                     } else {
-                       echo "<script type='text/javascript'>window.location='logos.php?msg=fail'</script>";
+                       echo "<script type='text/javascript'>window.location='company_logos.php?msg=fail'</script>";
                     }
                     //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
                 } else {
@@ -33,7 +33,7 @@
 		<div class="site-content">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="m-y-0">Logos</h3>
+            <h3 class="m-y-0">Company Logos</h3>
           </div>
           <div class="panel-body">            
             <div class="row">

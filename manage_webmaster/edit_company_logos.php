@@ -21,9 +21,9 @@ $id = $_GET['bid'];
                 if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                     $sql = "UPDATE `company_logos` SET title = '$title', banner = '$fileToUpload', status='$status' WHERE id = '$id' ";
                     if($conn->query($sql) === TRUE){
-                       echo "<script type='text/javascript'>window.location='logos.php?msg=success'</script>";
+                       echo "<script type='text/javascript'>window.location='company_logos.php?msg=success'</script>";
                     } else {
-                       echo "<script type='text/javascript'>window.location='logos.php?msg=fail'</script>";
+                       echo "<script type='text/javascript'>window.location='company_logos.php?msg=fail'</script>";
                     }
                     //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
                 } else {
@@ -32,9 +32,9 @@ $id = $_GET['bid'];
             }  else {
                 $sql = "UPDATE `company_logos` SET title = '$title', status='$status' WHERE id = '$id' ";
                 if($conn->query($sql) === TRUE){
-                   echo "<script type='text/javascript'>window.location='logos.php?msg=success'</script>";
+                   echo "<script type='text/javascript'>window.location='company_logos.php?msg=success'</script>";
                 } else {
-                   echo "<script type='text/javascript'>window.location='logos.php?msg=fail'</script>";
+                   echo "<script type='text/javascript'>window.location='company_logos.php?msg=fail'</script>";
                 }
             }   
             
@@ -46,7 +46,7 @@ $getBanners = $getBannersData->fetch_assoc();
 <div class="site-content">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="m-y-0">Logos</h3>
+            <h3 class="m-y-0">ompany Logos</h3>
           </div>
           <div class="panel-body">            
             <div class="row">
@@ -59,7 +59,7 @@ $getBanners = $getBannersData->fetch_assoc();
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <label for="form-control-4" class="control-label">Banner</label>
+                    <label for="form-control-4" class="control-label">Logo</label>
                     <img src="<?php echo $base_url . 'uploads/logo_images/'.$getBanners['banner'] ?>"  id="output" height="100" width="100"/>
                     <label class="btn btn-default file-upload-btn">
                         Choose file...

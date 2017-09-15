@@ -43,8 +43,9 @@
             data:"check_active_id="+check_active_id+"&table_name="+table_name+"&send_status="+send_status,              
             success:function(result){  
               if(result ==1) {
-                alert("Your Status Updated!");
-                location.reload();
+                //alert("Your Status Updated!");
+                //location.reload();
+                window.location = "?msg=success";
               }
             }
           });
