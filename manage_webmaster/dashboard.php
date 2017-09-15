@@ -37,24 +37,11 @@
             <div class="col-md-4 col-sm-4">
               <div class="widget widget-tile-2 bg-danger m-b-30">
                 <div class="wt-content p-a-20 p-b-50">
-                  <div class="wt-title">Orders</div>
-                  <div class="wt-number"><?php echo getRowsCount('orders')?></div>
+                  <div class="wt-title">Faqs</div>
+                  <div class="wt-number"><?php echo getRowsCount('faqs')?></div>
                 </div>
                 <div class="wt-icon">
                   <i class="zmdi zmdi-shopping-cart-plus zmdi-hc-fw"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="products.php">
-            <div class="col-md-4 col-sm-4">
-              <div class="widget widget-tile-2 bg-danger m-b-30">
-                <div class="wt-content p-a-20 p-b-50">
-                  <div class="wt-title">Books</div>
-                  <div class="wt-number"><?php echo getRowsCount('products')?></div>
-                </div>
-                <div class="wt-icon">
-                  <i class="zmdi zmdi-book-image zmdi-hc-fw"></i>
                 </div>
               </div>
             </div>

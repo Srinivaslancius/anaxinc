@@ -59,7 +59,15 @@
                 <span class="menu-icon">
                    <i class="zmdi zmdi-collection-item  zmdi-hc-fw"></i>
                 </span> 
-                <span class="menu-text">Content Pages</span>
+                <span class="menu-text">Content Page</span>
+              </a>
+            </li>
+            <li  class="<?php if($page_name == 'faqs.php' || $page_name == 'add_faqs.php' || $page_name == 'edit_faqs.php') { echo "active"; } ?>">
+              <a href="faqs.php" aria-haspopup="true">
+                <span class="menu-icon">
+                   <i class="zmdi zmdi-collection-item  zmdi-hc-fw"></i>
+                </span> 
+                <span class="menu-text">Faq Page</span>
               </a>
             </li>
             <!-- <li  class="<?php if($page_name == 'products.php' || $page_name == 'add_products.php' || $page_name == 'edit_products.php') { echo "active"; } ?>">
